@@ -8484,7 +8484,7 @@ $(function(){
 					+'<div class="row selectDivSong" tabindex="1">' 
 					+'<div class="col-xs-3">'
 					+'<center>'
-					+'<label style="width: 100%";name="masobaihat" id="masobaihat">'+row.id+'</label>'
+					+'<label style="width: 100%;color:black;";name="masobaihat" id="masobaihat">'+row.id+'</label>'
 					+'<span style="font-size:300%;color:'+row.status+';" id="'+row.id+'" onClick="reply_click('+row.id+')";>&hearts;</span>'
 					+'</center>'
 					+'</div>'
