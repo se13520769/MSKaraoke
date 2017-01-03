@@ -8530,7 +8530,7 @@ $(function(){
 			var that = this;
 			DEMODB.transaction(
 				function (transaction) {
-					transaction.executeSql("SELECT * FROM songAriang;", [], that.dataSelectHandler, that.errorHandler);
+					transaction.executeSql("SELECT * FROM songAriang ORDER BY title ASC ;", [], that.dataSelectHandler, that.errorHandler);
 				}
 				);			    
 		},
