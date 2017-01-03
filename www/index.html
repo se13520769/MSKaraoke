@@ -326,14 +326,17 @@
 		}
 
 		function reply_click(clicked_id){
-			localDBDemo.updateSetting(clicked_id);
 			var color = document.getElementById(clicked_id).style.color;
 			if(color=="red")
 			{
 				document.getElementById(clicked_id).style.color ="green";
+
 			}else{
 				document.getElementById(clicked_id).style.color ="red";
+
 			}
+			localDBDemo.updateSetting(clicked_id);
+			
 		}
 		function returnTramaso(){
 			openTab("onclick", "Tramaso");

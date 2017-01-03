@@ -26,9 +26,7 @@ $(function(){
 			$('#btnSearch').on('click', function(){ 
 				localDBDemo.searchSong(); 
 			});
-			$('#color_heart_54046').on('click', function(){ 
-				localDBDemo.updateSetting(); 
-			});
+			
 			
 	
 		},
@@ -8463,10 +8461,10 @@ $(function(){
 					var status_color =document.getElementById(id_song).style.color;
 					if(status_color=="green")
 					{
-						transaction.executeSql("UPDATE songAriang SET status ='red' WHERE id = ?",[id_song]);
+						transaction.executeSql("UPDATE songAriang SET status ='green' WHERE id = ?",[id_song]);
 					}
 					else{
-						transaction.executeSql("UPDATE songAriang SET status ='green' WHERE id = ?",[id_song]);
+						transaction.executeSql("UPDATE songAriang SET status ='red' WHERE id = ?",[id_song]);
 					}
 				}
 				);	
