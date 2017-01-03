@@ -374,12 +374,13 @@
 				if(sel.value=="Tatca")
 				{
 					taga[i].style.display = "";
-					return;
 				}
-				if (tagh_tenbaihat[i].innerText.charAt(0).toUpperCase().indexOf(sel.value) > -1) {
-					taga[i].style.display = "";
-				} else {
-					taga[i].style.display = "none";
+				else{
+					if (tagh_tenbaihat[i].innerText.charAt(0).toUpperCase().indexOf(sel.value) > -1) {
+						taga[i].style.display = "";
+					} else {
+						taga[i].style.display = "none";
+					}
 				}
 			}
 		}
